@@ -10,7 +10,7 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', 'RTOriginalsbot')
 API_ID = int(environ.get('API_ID', '25319180'))
 API_HASH = environ.get('API_HASH', 'b23aff7f330fb7a212f02f8fb223304f')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
@@ -59,7 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://relangitatayya:i7S0RgK0mGlZb0La@cluster0.0ywgl2x.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://relangitatayya:i7S0RgK0mGlZb0La@cluster0.0ywgl2x.mongodb.netRTMoviesDB/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
